@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+  }
+  
+  button {
+    border: 1px solid #181818;
+    background-color: #3D3C42;
+    padding: 1.7em;
+    color: #F2F2F2;
+  }button:hover {
+    border-color: #F2F2F2;
+  }
+  
+  #container {
+    display: flex;
+    background: rgb(50,43,43);
+  background: radial-gradient(circle, rgba(50,43,43,1) 0%, rgba(24,24,24,1) 44%, rgba(24,24,24,1) 99%);
+    /*height:100vh;*/
+  }
+  
+  input[type="text"] {
+    width: 256px;
+    padding: 15px 15px;
+}
+  .display-container input{
+    width: 100%;
+    padding: 15px 15px;
+  }
+  #calculator {
+    background-color: #F2F2F2;
+    padding: .1em;
+    width: 15em;
+    margin: auto;
+  }
+  
+  #display-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    color: #F2F2F2;
+  }
+  
+  #display, #result {
+    text-align: right;
+    margin-right: 5px; 
+  }
+  
+  #display {
+    font-size: 1.7rem;
+  }
+  
+  #result {
+    font-size: 1rem;
+    color: #5CB8E4;
+  }
+  
+  #buttons {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeta(4, 1fr);
+    grid-template-areas: 
+      " ac ac divide multiply "
+      " seven eight nine substract "
+      " four five six add "
+      " one two three equals "
+      " zero zero decimal equals "
+  }
+  
+  #zero { grid-area: zero;}
+  #one { grid-area: one;}
+  #two { grid-area: two;}
+  #three { grid-area: three;}
+  #four { grid-area: four;}
+  #five { grid-area: five;}
+  #six { grid-area: six;}
+  #seven { grid-area: seven;}
+  #eight { grid-area: eight;}
+  #nine { grid-area: nine;}
+  #equals { grid-area: equals; background-color: #2C3333; }
+  #decimal { grid-area: decimal; }
+  #add { grid-area: add; background-color: #2C3333;}
+  #substract { grid-area: substract; background-color: #2C3333; }
+  #divide { grid-area: divide; background-color: #2C3333; }
+  #multiply { grid-area: multiply; background-color: #2C3333; }
+  #clear { grid-area: ac; }
+  
+  
+  #clear {
+    background-color: #CC3636;
+  }
